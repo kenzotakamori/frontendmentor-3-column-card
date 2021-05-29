@@ -12,12 +12,27 @@ body {
   display: grid;
   place-items: center;
 }
+@media (max-width: 800px) {
+  body {
+    width: 375px;
+    height: 100%;
+  }
+}
 
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 65.5vw;
   height: 75vh;
+}
+@media (max-width: 800px) {
+  .container {
+    height: auto;
+    width: 90vw;
+    margin: 50px 0 50px 0;
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 
 .card {
@@ -32,6 +47,11 @@ body {
 .card:first-child button {
   color: #e38826;
 }
+@media (max-width: 800px) {
+  .card:first-child {
+    border-radius: 10px 10px 0 0;
+  }
+}
 .card:nth-child(2) {
   background-color: #006970;
 }
@@ -45,6 +65,12 @@ body {
 .card:last-child button {
   color: #004241;
 }
+@media (max-width: 800px) {
+  .card:last-child {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
 h2 {
   color: #f2f2f2;
   text-transform: uppercase;
@@ -62,6 +88,7 @@ p {
 }
 
 button {
+  margin-block-start: 2em;
   border: 2px solid #f2f2f2;
   border-radius: 25px;
   height: 50px;
