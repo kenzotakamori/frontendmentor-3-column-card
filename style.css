@@ -17,13 +17,21 @@ body {
 .card:first-child {
   background-color: #e38826;
 }
+.card:first-child button {
+  color: #e38826;
+}
 .card:nth-child(2) {
   background-color: #006970;
+}
+.card:nth-child(2) button {
+  color: #006970;
 }
 .card:last-child {
   background-color: #004241;
 }
-
+.card:last-child button {
+  color: #004241;
+}
 h2 {
   color: #f2f2f2;
   text-transform: uppercase;
@@ -39,6 +47,13 @@ button {
   border-radius: 20px;
   height: 40px;
   line-height: 40px;
+  width: 150px;
+  transition: all 0.1s ease-in;
+}
+
+.active-button, .card:first-child button:active, .card:nth-child(2) button:active, .card:last-child button:active {
+  color: #f2f2f2;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

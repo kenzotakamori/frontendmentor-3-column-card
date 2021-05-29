@@ -15,12 +15,30 @@ body {
     grid-template-rows: 1fr 1fr auto 1fr;
     &:first-child {
         background-color: hsl(31, 77%, 52%);
+        button {
+            color: hsl(31, 77%, 52%);
+            &:active {
+                @extend .active-button;
+            }
+        }
     }
     &:nth-child(2) {
         background-color: hsl(184, 100%, 22%);
+        button {
+            color: hsl(184, 100%, 22%);
+            &:active {
+                @extend .active-button;
+            }
+        }
     }
     &:last-child {
         background-color: hsl(179, 100%, 13%);
+        button {
+            color: hsl(179, 100%, 13%);
+            &:active {
+                @extend .active-button;
+            }
+        }
     }
 }
 
@@ -40,5 +58,10 @@ button {
     height: 40px;
     line-height: 40px;
     width: 150px;
+    transition: all 0.1s ease-in;
+}
+
+.active-button {
+    color: hsl(0, 0%, 95%);
     background-color: transparent;
 }
