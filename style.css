@@ -28,7 +28,7 @@ body {
 @media (max-width: 800px) {
   .container {
     height: auto;
-    width: 90vw;
+    width: 90%;
     margin: 50px 0 50px 0;
     grid-template-columns: none;
     grid-template-rows: repeat(3, 1fr);
