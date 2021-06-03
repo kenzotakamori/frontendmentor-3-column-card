@@ -41,7 +41,7 @@ body {
         border-radius: 10px 0 0 10px;
         button {
             color: hsl(31, 77%, 52%);
-            &:active {
+            &:hover {
                 @extend .active-button;
             }
         }
@@ -53,7 +53,7 @@ body {
         background-color: hsl(184, 100%, 22%);
         button {
             color: hsl(184, 100%, 22%);
-            &:active {
+            &:hover {
                 @extend .active-button;
             }
         }
@@ -63,7 +63,7 @@ body {
         border-radius: 0 10px 10px 0;
         button {
             color: hsl(179, 100%, 13%);
-            &:active {
+            &:hover {
                 @extend .active-button;
             }
         }
@@ -101,6 +101,7 @@ button {
 }
 
 .active-button {
+    cursor: pointer;
     color: hsl(0, 0%, 95%);
     background-color: transparent;
 }
